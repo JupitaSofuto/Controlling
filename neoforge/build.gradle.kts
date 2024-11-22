@@ -6,13 +6,12 @@ import net.darkhax.curseforgegradle.TaskPublishCurseForge
 
 plugins {
     id("blamejared-modloader-conventions")
-    id("net.neoforged.moddev") version ("0.1.93")
+    id("net.neoforged.moddev") version ("2.0.46-beta")
     id("com.modrinth.minotaur")
 }
 
 neoForge {
     version = Versions.NEO_FORGE
-    accessTransformers.add(file("src/main/resources/META-INF/accesstransformer.cfg").absolutePath)
     runs {
         register("client") {
             client()
