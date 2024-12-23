@@ -184,7 +184,7 @@ public class NewKeyBindsList extends CustomList {
             
             Services.EVENT.fireKeyEntryRenderEvent(this, guiGraphics, slotIndex, y, x, rowLeft, rowWidth, mouseX, mouseY, hovered, partialTicks);
             
-            int resetKeyX = NewKeyBindsList.this.getScrollbarPosition() - this.btnResetKeyBinding.getWidth() - 10;
+            int resetKeyX = NewKeyBindsList.this.scrollBarX() - this.btnResetKeyBinding.getWidth() - 10;
             this.btnResetKeyBinding.setX(resetKeyX);
             int top = y - 2;
             this.btnResetKeyBinding.setY(top);

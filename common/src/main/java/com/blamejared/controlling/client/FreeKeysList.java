@@ -81,9 +81,9 @@ public class FreeKeysList extends CustomList {
     }
     
     @Override
-    protected int getScrollbarPosition() {
+    protected int scrollBarX() {
         
-        return super.getScrollbarPosition() + 15 + 20;
+        return super.scrollBarX() + 15 + 20;
     }
     
     public class InputEntry extends Entry implements IInputEntry {
